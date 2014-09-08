@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pure Dark</title>
+		<meta  charset="utf-8" /> 
+		<!--[if lte IE 8]><script > window.location = "ie8/oldie.html" </script><![endif]-->
+		<link rel="stylesheet" href="reset.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="lightbox/lightbox.css" type="text/css" />
+		<link rel="stylesheet" href="slider/slider.css" type="text/css" />
+		<link rel="icon" type="image/png" href="img/fav.ico" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="slider/js/jquery.nivo.slider.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+		<script type="text/javascript" src="lightbox/lightbox-2.6.min.js"></script>
+			
+		<!-- slider script -->
+		    <script>
+				$(window).load(function() {
+				$('#slider').nivoSlider();
+				});
+			</script>
+		<!-- end of slider script -->
+		
+		<!-- change active color of the "home" menu  -->
+		<script>
+			$(document).ready(function(){
+			$('#header_nav a').click(function() {
+			$('#header_nav a').removeClass("navigation_active"); 
+			$(this).addClass("navigation_active"); 
+			});
+			});
+		</script>
+		<!-- end of change active home menu  -->
+
+		<!-- change active animation of the "home" menu  -->
+		<script>
+			$(document).ready(function(){
+			$('#header_nav a span').click(function() {
+			$('#header_nav a span').addClass("nav_animation"); 
+			$(this).removeClass("nav_animation"); 
+			});
+			});
+		</script>
+		<!-- end of change active animation of the "home" menu  -->
+		
+		<!-- change active menu in content_scope -->
+		<script>
+			$(document).ready(function(){
+			$('.buttons_box').click(function() {
+			$('.buttons_box').removeClass("buttons_active"); 
+			$(this).addClass("buttons_active"); 
+			});
+			});
+		</script>
+		<!-- end of change active menu in content_scope  -->
+		
+
+		
+		<!-- change active block_read in content_scope  -->
+		<script>
+		$(document).ready(function(){
+				$(".button_2").click(function(){
+				$(".read_blocks").removeClass("read_active"); 
+				$(".read_2").addClass("read_active"); 
+				});
+				$(".button_3").click(function(){
+				$(".read_blocks").removeClass("read_active"); 
+				$(".read_3").addClass("read_active"); 
+				});
+				$(".button_4").click(function(){
+				$(".read_blocks").removeClass("read_active"); 
+				$(".read_4").addClass("read_active"); 
+				});
+				$(".button_5").click(function(){
+				$(".read_blocks").removeClass("read_active"); 
+				$(".read_5").addClass("read_active"); 
+				});
+				$(".button_1").click(function(){
+				$(".read_blocks").removeClass("read_active"); 
+				$(".read_1").addClass("read_active"); 
+				});
+			});
+		</script>
+		<!-- end of change active block_read in content_scope   -->
+		
+		<!-- change active box in content_contact  -->
+		<script>
+		$(document).ready(function(){
+				$(".info_date .link_2012").click(function(){
+				$(".info_boxes_first").addClass("boxes_unactive"); 
+				$(".info_boxes_second").removeClass("boxes_unactive");
+				});
+				$(".info_date .link_2013").click(function(){
+				$(".info_boxes_first").removeClass("boxes_unactive");	
+				$(".info_boxes_second").addClass("boxes_unactive");
+				});
+			});
+		</script>
+		<!--end of  change active box in content_contact  -->
+		
+		<!-- change active year in content_contact  -->
+		<script>
+			$(document).ready(function(){
+			$(".work_link").click(function() {
+			$(".work_link").removeClass("work_link_active"); 
+			$(this).addClass("work_link_active"); 
+			});
+			});
+		</script>
+		<!-- end of change active year in content_contact  -->
+		
+		<!-- main menu pages slider -->
+		<script>
+ 			$(document).ready(function(){
+			$("#header_nav a.link_home").click(function(){
+			$("div.container_active").addClass("container_unactive"); 
+			$("div.container_active").removeClass("container_active"); 
+			$("#content_home").removeClass("container_unactive"); 
+			$("#content_home").addClass("container_active"); 
+			}); 
+			$("#header_nav a.link_gallery").click(function(){
+			$("div.container_active").addClass("container_unactive"); 
+			$("div.container_active").removeClass("container_active"); 
+			$("#content_gallery").removeClass("container_unactive"); 
+			$("#content_gallery").addClass("container_active"); 
+			}); 
+			$("#header_nav a.link_scope").click(function(){
+			$("div.container_active").addClass("container_unactive"); 
+			$("div.container_active").removeClass("container_active"); 
+			$("#content_scope").removeClass("container_unactive"); 
+			$("#content_scope").addClass("container_active"); 
+			}); 	
+			$("#header_nav a.link_contact").click(function(){
+			$("div.container_active").addClass("container_unactive"); 
+			$("div.container_active").removeClass("container_active"); 
+			$("#content_contact").removeClass("container_unactive"); 
+			$("#content_contact").addClass("container_active"); 
+			}); 			
+			});
+		</script>
+		<!-- end of main menu pages slider -->
+	</head>
+	<body >
+		<div id="header">
+			<div id="header_logo">
+				<a href="index.html"></a>
+			</div>
+			<div id="header_nav">
+				<ul>
+					<li>
+					 	<a class="navigation_active link_home" >Home
+							<span class=""> 
+								<span class="fly fly-a"></span>
+								<span class="fly fly-b"></span>
+								<span class="fly fly-c"></span>
+							</span> 	
+						</a>
+					</li>
+					<li>
+						<a class="link_gallery" >Gallery
+								<span class="nav_animation"> 
+								<span class="fly fly-a"></span>
+								<span class="fly fly-b"></span>
+								<span class="fly fly-c"></span>
+							</span> 
+						</a>
+					</li>
+					<li>
+						<a class="link_scope" >Scope
+							<span class="nav_animation"> 
+								<span class="fly fly-a"></span>
+								<span class="fly fly-b"></span>
+								<span class="fly fly-c"></span>
+							</span> 						
+						</a>
+					</li>
+					<li>
+						<a  class="link_contact" >Contact
+							<span class="nav_animation"> 
+								<span class="fly fly-a"></span>
+								<span class="fly fly-b"></span>
+								<span class="fly fly-c"></span>
+							</span> 						
+						</a>
+					</li>
+				</ul>
+			</div>
+			<span class="header_bottom"></span>
+		</div>
+		<div id="container">
+			<div id="content_home" class="container_active">
+				<div id="container_slider">
+					<div class="slider-wrapper theme-default">
+						<div id="slider" class="nivoSlider">
+							<img src="slider/img/meth.png" data-thumb="slider/img/meth.png" alt="" />
+							<img src="slider/img/coc.png" data-thumb="islider/img/coc.png" alt=""   />
+							<img src="slider/img/tetra.png" data-thumb="slider/img/tetra.png" alt="" data-transition="slideInLeft" />
+							<img src="slider/img/alch.png" data-thumb="slider/img/alch.png" alt=""  />
+						</div>
+					</div>
+				</div>
+				<div id="container_read">
+					<h1>A simple text here.</h1>
+					<div id="read_block">
+						<div class="block_box">
+							<div class="box_image box_image_files">
+							</div>	
+							<h3>Extensive Documentation</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+							do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam.</p>
+						</div>
+						<div class="block_box">
+							<div class="box_image box_image_design">
+							</div>	
+							<h3>100% Responsive Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+							do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam.</p>
+						</div>
+						<div class="block_box">
+							<div class="box_image box_image_custom">
+							</div>	
+							<h3>Completely Customizable</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+							do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam.</p>
+						</div>
+						<div class="block_box">
+							<div class="box_image box_image_fresh">
+							</div>	
+							<h3>Fresh and Clean Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+							do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam.</p>
+						</div>
+						<div class="block_box">
+							<div class="box_image box_image_video">
+							</div>	
+							<h3>Video Screencast Tutorials</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+							do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam.</p>
+						</div>
+						<div class="block_box">
+							<div class="box_image box_image_update">
+							</div>	
+							<h3>Free Updates & Support</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+							do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam.</p>
+						</div>		
+					<div class="clear">
+					</div>			
+					</div>		
+				</div>
+				<div id="container_look">
+					<h1>Another awesome title.</h1>
+					<div id="look_block">	
+						<div id="look_left">
+							<h2>Our Plans Include:</h2>
+							<div id="left_block">
+								<div class="left_box ">
+									<div class="left_img left_pic1">
+									</div>
+									<p>Control Panel</p>
+								</div>
+								<div class="left_box left_mid">
+									<div class="left_img left_pic2">
+									</div>
+									<p>Direct Support</p>
+								</div>
+								<div class="left_box ">
+									<div class="left_img left_pic3">
+									</div>
+									<p>Unique Success</p>
+								</div>
+								<div class="clear">
+								</div>
+							</div>
+						</div>
+						<div id="look_right">
+							<h2>Chose your destiny:</h2>
+							<div id="right_block">
+								<ul class="list_top">
+									<li>Quality</li>
+									<li>Space</li>
+									<li>Support</li>
+									<li>Access</li>
+								</ul>
+								<div class="clear">
+								</div>
+								<div class="table_look ">
+									<p>$15</p>
+									<p>month</p>
+									<div class="look_layer">
+										<p class="look_title">Advanced</p>
+									</div>
+								</div>
+								<ul class="first_table">
+									<li class="link_one">Medium</li>
+									<li class="link_two">>100Gb</li>
+									<li class="link_three">Full-Time</li>
+									<li class="link_four">Partial</li>
+								</ul>
+								<div class="clear">
+								</div>
+								<div class="table_look ">
+									<p>$25</p>
+									<p>month</p>
+									<div class="look_layer">	
+										<p class="look_title">Business</p>
+									</div>
+								</div>
+								<ul class="second_table">
+									<li class="link_one">High</li>
+									<li class="link_two">>500Gb</li>
+									<li class="link_three">Full-Time</li>
+									<li class="link_four">Full</li>
+								</ul>
+							<div class="clear">
+							</div>						
+							</div>
+						</div>
+						<div class="clear">
+						</div>	
+					</div>	
+				</div>	
+				<div class="footer">
+					<p>©copyright 2013	<a href="index.html">pure dark</a></p>
+				<p>by piupiupiu</p>
+				</div> 
+			</div> <!-- end of content_home -->
+			<div id="content_gallery" class="container_unactive">
+				<div id="pages_block">
+					<h1>Our "fashion" gallery</h1>
+					<div class="pages_box">
+						<a  href="lightbox/img/image-1.jpg" data-lightbox="example-set" >
+							<img  src="lightbox/img/thumb-1.jpg" alt="Plants: image 1 0f 6 thumb" width="295" height="450"/>
+						</a>
+						<h3>The Dark Mark</h3>
+						<p>Perfect Design-Blablabla</p>
+					</div>
+					<div class="pages_box">
+						<a  href="lightbox/img/image-2.jpg" data-lightbox="example-set" >
+							<img  src="lightbox/img/thumb-2.jpg" alt="Plants: image 2 0f 6 thumb" width="295" height="450"/>
+						</a>
+						<h3>Website Logo</h3>
+						<p>Perfect Design-Blablabla</p>
+					</div>
+					<div class="pages_box">
+						<a class="example-image-link" href="lightbox/img/image-3.jpg" data-lightbox="example-set" >
+							<img class="example-image" src="lightbox/img/thumb-3.jpg" alt="Plants: image 3 0f 6 thumb" width="295" height="450"/>
+						</a>
+						<h3>The Filth Wall</h3>
+						<p>Perfect Design-Blablabla</p>					
+					</div>
+					<div class="pages_box">
+						<a class="example-image-link" href="lightbox/img/image-4.jpg" data-lightbox="example-set">
+							<img class="example-image" src="lightbox/img/thumb-4.jpg" alt="Plants: image 4 0f 6 thumb" width="295" height="450"/>
+						</a>
+						<h3>The Gloomy Wood</h3>
+						<p>Perfect Design-Blablabla</p>					
+					</div>
+					<div class="pages_box">
+						<a class="example-image-link" href="lightbox/img/image-5.jpg" data-lightbox="example-set">
+							<img class="example-image" src="lightbox/img/thumb-5.jpg" alt="Plants: image 5 0f 6 thumb" width="295" height="450"/>
+						</a>
+						<h3>Dunno what is it</h3>
+						<p>Perfect Design-Blablabla</p>					
+					</div>
+					<div class="pages_box">
+						<a class="example-image-link" href="lightbox/img/image-6.jpg" data-lightbox="example-set">
+							<img class="example-image" src="lightbox/img/thumb-6.jpg" alt="Plants: image 6 0f 6 thumb" width="295" height="450"/>
+						</a>
+						<h3>The Last Words</h3>
+						<p>Perfect Design-Blablabla</p>		
+						</div>
+					<div class="clear">
+					</div>			
+				</div>
+				<div class="footer">
+					<p>©copyright 2013	<a href="index.html">pure dark</a></p>
+					<p>by piupiupiu</p>
+				</div> 
+			</div>
+			<div id="content_scope" class="container_unactive">
+				<div id="scope_container">
+					<h1>Why we so cool</h1>
+					<div id="scope_info">
+						<div id="scope_buttons">
+							<div class="buttons_box buttons_active button_1">
+								<p>Mortred</p>
+								<p>carry</p>
+							</div>
+							<div class="buttons_box button_2">
+								<p>lina</p>
+								<p>support</p>	
+							</div>
+							<div class="buttons_box button_3">
+								<p>Undying</p>
+								<p>support</p>
+							</div>
+							<div class="buttons_box button_4">
+								<p>Axe</p>
+								<p>initiator</p>
+							</div>
+							<div class="buttons_box button_5">
+								<p>Clockwerk</p>
+								<p>initiator</p>
+							</div>
+						</div>
+						<div id="scope_read">
+							<div class="read_blocks read_active read_1">
+								<h3>Phantom Assassin</h3>
+								<img src="img/scope_pic_1.png" alt="pic pic" />
+								<p>Through a process of divination, children are selected for upbringing by the Sisters of the Veil,
+								an order that considers assassination a sacred part of the natural order. The Veiled Sisters identify
+								targets through meditation and oracular utterances. They accept no contracts, and never seem to pursue
+								targets for political or mercenary reasons. Their killings bear no relation to any recognizable agenda,
+								and can seem to be completely random: A figure of great power is no more likely to be eliminated than 
+								a peasant or a well digger. Whatever pattern the killings may contain, it is known only to them.
+								hey treat their victims as sacrifices, and death at their hand is considered an honor. Raised with no 
+								identity except that of their order, any Phantom Assassin can take the place of any other; their number
+								is not known.</p>
+							</div>
+							<div class="read_blocks read_2">
+								<h3>Lina the Slayer</h3>
+								<img src="img/scope_pic_2.png" alt="pic pic" />
+								<p>he sibling rivalries between Lina the Slayer, and her younger sister Rylai, the Crystal Maiden, were
+								the stuff of legend in the temperate region where they spent their quarrelsome childhoods together. 
+								Lina always had the advantage, however, for while Crystal was guileless and naive, Lina's fiery ardor 
+								was tempered by cleverness and conniving. The exasperated parents of these incompatible offspring went 
+								through half a dozen homesteads, losing one to fire, the next to ice, before they realized life would be 
+								simpler if the children were separated. As the oldest, Lina was sent far south to live with a patient aunt 
+								in the blazing Desert of Misrule, a climate that proved more than comfortable for the fiery Slayer.</p>
+							</div>
+							<div class="read_blocks read_3">
+								<h3>Almighty Dirge</h3>
+								<img src="img/scope_pic_3.png" alt="pic pic" />
+								<p>Dimly he recalls armor and banners and grim-faced kin riding at his side. He remembers a battle: 
+								pain and fear as pale hands ripped him from his saddle. He remembers terror as they threw him into the 
+								yawning pit of the Dead God alongside his brothers, to hear the Dirge and be consumed into nothingness.
+								In the darkness below, time left them. Thought left them. Sanity left them. Hunger, however, did not. 
+								They turned on each other with split fingernails and shattered teeth. Then it came: distant at first,
+								a fragile note at the edge of perception, joined by another, then another, inescapable and unending.
+								The chorus grew into a living wall of sound pulsing in his mind until no other thought survived.
+								With the Dirge consuming him, he opened his arms to the Dead God and welcomed his obliteration. 
+								Yet destruction was not what he'd been chosen for.</p>
+							</div>
+							<div class="read_blocks read_4">
+								<h3>Mogul Khan</h3>
+								<img src="img/scope_pic_5.png" alt="pic pic" />
+								<p>As a grunt in the Army of Red Mist, Mogul Khan set his sights on the rank of Red Mist General.
+								In battle after battle he proved his worth through gory deed. His rise through the ranks was helped 
+								by the fact that he never hesitated to decapitate a superior. Through the seven year Campaign of the
+								Thousand Tarns, he distinguished himself in glorious carnage, his star of fame shining ever brighter,
+								while the number of comrades in arms steadily dwindled. On the night of ultimate victory, Mogul declared 
+								himself the new Red Mist General, and took on the ultimate title of 'Axe.' But his troops now numbered zero.
+								Of course, many had died in battle, but a significant number had also fallen to Axe's blade. Needless to say,
+								most soldiers now shun his leadership. But this matters not a whit to Axe, who knows that a one-man army is 
+								by far the best.</p>
+							</div>
+							<div class="read_blocks read_5">
+								<h3>Rattletrap</h3>
+								<img src="img/scope_pic_4.png" alt="pic pic" />
+								<p>Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk,
+								has offset his diminutive stature through the application of gadgetry and wit. The son of the son of a clockmaker,
+								Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains 
+								villages free of such innocent vocations. “Your new trade is battle,” his dying father told him as the village of 
+								their ancestors lay in charred and smoking ruins.It is a poor tradesman who blames his tools, and Rattletrap was 
+								never one to make excuses. After burying his father among the ruins of their village, he set about to transform 
+								himself into the greatest tool of warfare that any world had ever seen. He vowed to never again be caught unprepared,
+								instead using his talents to assemble a suit of powered Clockwerk armor to make the knights of other lands look like
+								tin cans by comparison.</p>
+								<div class="clear">
+								</div>
+							</div>
+
+						</div>
+						<div class="clear">
+						</div>
+					</div>
+					<h1>What we can do for you</h1>
+					<div id="scope_help">
+						<div class="help_boxes boxes_left boxes_bord_none">
+							<img src="img/help_1.png" alt="logo pic" />
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, ipsum id consectetur</h4>
+						</div>
+						<div class="help_boxes boxes_right boxes_bord_none">
+							<img src="img/help_2.png" alt="logo pic" />
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, ipsum id consectetur</h4>
+						</div>
+						<div class="help_boxes boxes_left">
+							<img src="img/help_3.png" alt="logo pic" />
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, ipsum id consectetur</h4>
+						</div>
+						<div class="help_boxes boxes_right">
+							<img src="img/help_4.png" alt="logo pic" />
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, ipsum id consectetur</h4>
+						</div>
+						<div class="help_boxes boxes_left ">
+							<img src="img/help_5.png" alt="logo pic" />
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, ipsum id consectetur</h4>
+						</div>
+						<div class="help_boxes boxes_right  ">
+							<img src="img/help_6.png" alt="logo pic" />
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, ipsum id consectetur</h4>
+						</div>					
+						<div class="clear">
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>©copyright 2013	<a href="index.html">pure dark</a></p>
+					<p>by piupiupiu</p>
+				</div> 
+			</div>	
+			<div id="content_contact" class="container_unactive">
+				<h1>See you again</h1>
+				<div id="contact_work">
+						<img class="work_img" src="img/ladder.png" alt="ladder" />
+						<h2  class="work_head">What we have done so far</h2>
+							<span class="info_date">
+								<a class="work_link work_link_active link_2013 "  >2013</a>
+								<a class="work_link link_2012" >2012</a>
+							</span>	
+						<div class="clear">
+						</div>
+						<div id="info_block">
+							<div class="info_boxes_first  ">
+								<div class="info_box">	
+									<span>115</span>
+									<p>Servers started</p>
+								</div>
+								<div class="info_box">	
+									<span>200</span>
+									<p>Works performed</p>
+								</div>
+								<div class="info_box">	
+									<span>500</span>
+									<p>Users satisfied</p>						
+								</div>
+								<div class="info_box">	
+									<span>6</span>
+									<p class="info_correct">Games played</p>						
+								</div>
+								<div class="info_box">	
+									<span>56</span>
+									<p>Quest completed</p>						
+								</div>
+								<div class="clear">
+								</div>
+							</div>
+							<div class="info_boxes_second boxes_unactive ">
+								<div class="info_box">	
+									<span>86</span>
+									<p>Servers started</p>
+								</div>
+								<div class="info_box">	
+									<span>150</span>
+									<p>Works performed</p>
+								</div>
+								<div class="info_box">	
+									<span>350</span>
+									<p>Users satisfied</p>						
+								</div>
+								<div class="info_box">	
+									<span>4</span>
+									<p class="info_correct">Games played</p>						
+								</div>
+								<div class="info_box">	
+									<span>38</span>
+									<p>Quest completed</p>						
+								</div>
+								<div class="clear">
+								</div>
+							</div>
+							<h1>Contact with us</h1>
+						</div>
+						<div id="forms_block">
+							<div id="block_twit">
+									<h2>Latest tweet</h2>
+									<img src="img/twit.png" alt="twitter pic" />
+									<span class="twit_date">28 days ago</span>
+									<div class="clear">
+									</div>
+									<a href="#">Start where you are. Use what you have. Do what you can.<span class="twit_author"> –Arthur Ashe</span>    </a>
+
+							</div>
+							<div id="block_contact">
+								<form >
+									<label>Name*</label>
+									<input id="name" type="text"  name="name"  size="18" />
+									<label>Email Address*</label>
+									<input id="email" type="text"  name="email"  size="18" />
+									<label>Your Message*</label>
+									<textarea id="message" cols="42" rows="5"  name="message"></textarea>
+									<input id="submit" type="submit" value="Send Mail" />
+								</form>	
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+				</div>
+				<div class="footer">
+					<p>©copyright 2013	<a href="index.html">pure dark</a></p>
+					<p>by piupiupiu</p>
+				</div> 
+			</div>			
+		</div>
+
+		<a id="toTop" href="#" >
+			<span id="toTopHover" ></span>
+		</a>
+			<script>
+				$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+			</script>
+	</body>
+</html>
